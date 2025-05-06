@@ -9,7 +9,7 @@
 }
 /* Estilos generales */
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Delius Swash Caps", cursive;
   line-height: 1.6;
   color: var(--text-color);
   background-color: #fcfaf7;
@@ -32,7 +32,7 @@ header {
 }
 
 .logo {
-  font-family: "Playfair Display", serif;
+  font-family: "Delius Swash Caps", cursive;
   font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
@@ -92,7 +92,7 @@ main {
 
 .presentacion h2 {
   color: var(--primary-color);
-  font-family: "Playfair Display", serif;
+  font-family: "Delius Swash Caps", cursive;
   font-size: 2rem;
   margin-bottom: 1.5rem;
   text-align: center;
