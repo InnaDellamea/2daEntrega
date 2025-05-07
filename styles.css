@@ -36,8 +36,12 @@ header {
   font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
+
   margin: 0;
   color: var(--light-color);
+}
+.logo-link {
+  text-decoration: none;
 }
 
 /* Navbar */
@@ -114,7 +118,7 @@ main {
   margin-right: auto;
 }
 
-/* Estilos del pie de página */
+/* Footer */
 footer {
   background-color: var(--primary-color);
   color: var(--light-color);
@@ -147,7 +151,6 @@ footer {
 }
 
 /* MENÚ */
-
 .menu-section {
   padding-bottom: 40px;
 }
@@ -361,16 +364,66 @@ footer {
 .btn-contacto:hover {
   background-color: #357abd;
 }
+/* ACERCA DE NOSOTROS */
+
+.acerca-section {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.acerca-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 16px;
+  color: #2c3e50;
+}
+
+.acerca-section p {
+  font-size: 1.1rem;
+  flex: 1;
+  text-align: left;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.acerca-img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  margin: 0 auto;
+  display: block;
+}
+
 /* RESPONSIVE */
 
 @media (max-width: 768px) {
-  header {
-    justify-content: center;
-  }
-  nav-bar {
+  .nav-bar {
     justify-content: flex-start;
     gap: 16px;
     margin-left: 15px;
+  }
+
+  .menu-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .acerca-contenido {
+    flex-direction: column;
+  }
+
+  .acerca-texto {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    justify-content: center;
   }
   .logo {
     flex-basis: 100%;
@@ -383,15 +436,5 @@ footer {
   }
   .footer-nav {
     justify-content: center;
-  }
-  .menu-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
-  section {
-    padding: 15px;
-  }
-  button {
-    width: 100%;
-    padding: 14px 0;
   }
 }
