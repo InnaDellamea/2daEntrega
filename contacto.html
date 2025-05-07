@@ -42,13 +42,13 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="menu.html">Menú</a>
+                <a class="nav-link" href="menu.html">Menú</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="reserva.html">Reservas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
+                <a class="nav-link active" href="contacto.html">Contacto</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="acerca.html">Sobre Nosotros</a>
@@ -58,72 +58,60 @@
         </div>
       </nav>
     </header>
-
     <main class="container">
-      <section class="menu-section">
+      <section class="contacto-section">
+        <h2>Información de Contacto</h2>
         <p>
-          Descubre nuestros platos especiales preparados con ingredientes
-          frescos y de la mejor calidad
+          Puedes contactarnos directamente o utilizar el formulario a
+          continuación
         </p>
-        <div class="menu-grid">
-          <article class="menu-item">
-            <img
-              src="https://images.pexels.com/photos/694587/pexels-photo-694587.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200"
-              alt="Ensalada César"
-            />
-            <h3>Ensalada César</h3>
-            <p>Lechuga fresca, crutones, queso parmesano y aderezo César</p>
-            <p class="price">USD 9.99</p>
-          </article>
-          <article class="menu-item">
-            <img
-              src="https://images.pexels.com/photos/1435893/pexels-photo-1435893.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200"
-              alt="Pasta al Pesto"
-            />
-            <h3>Pasta al Pesto</h3>
-            <p>Tallarines con salsa pesto de albahaca y piñones</p>
-            <p class="price">USD 12.50</p>
-          </article>
-          <article class="menu-item">
-            <img
-              src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200"
-              alt="Filete de salmón"
-            />
-            <h3>Filete de Salmón</h3>
-            <p>Salmón a la plancha con salsa de limón y verduras asadas</p>
-            <p class="price">USD 17.00</p>
-          </article>
-          <article class="menu-item">
-            <img
-              src="https://images.pexels.com/photos/410648/pexels-photo-410648.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200"
-              alt="Hamburguesa Gourmet"
-            />
-            <h3>Hamburguesa Gourmet</h3>
-            <p>Carne 100% de res, queso cheddar, bacon y salsa especial</p>
-            <p class="price">USD 14.00</p>
-          </article>
-          <article class="menu-item">
-            <img
-              src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200"
-              alt="Pizza Margarita"
-            />
-            <h3>Pizza Margarita</h3>
-            <p>Masa artesanal, tomate fresco, mozzarella y albahaca</p>
-            <p class="price">USD 13.00</p>
-          </article>
-          <article class="menu-item">
-            <img
-              src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200"
-              alt="Postre Chocolate"
-            />
-            <h3>Postre de Chocolate</h3>
-            <p>Delicioso mousse de chocolate con frutos rojos</p>
-            <p class="price">USD 6.50</p>
-          </article>
+
+        <div class="contact-info">
+          <p>
+            <strong>Número de teléfono:</strong>
+            <a href="tel:+5491112345678">+54 9 11 1234-5678</a> |
+            <a href="https://wa.me/5491112345678">Contactar por WhatsApp</a>
+          </p>
+          <p>
+            <strong>Dirección:</strong>
+            <a
+              href="https://maps.google.com/?q=Av.+Siempre+Viva+742,+Buenos+Aires,+Argentina"
+            >
+              Av. Siempre Viva 742, Buenos Aires, Argentina
+            </a>
+          </p>
         </div>
+        <form class="contacto-form" action="#" method="post" novalidate>
+          <label for="nombre">Nombre completo</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            required
+            placeholder="Tu nombre"
+          />
+
+          <label for="email">Correo electrónico</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="ejemplo@correo.com"
+          />
+
+          <label for="mensaje">Mensaje</label>
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            rows="3"
+            placeholder="Escribe tu mensaje aquí"
+          ></textarea>
+
+          <button type="submit" class="btn-contacto">Enviar mensaje</button>
+        </form>
       </section>
     </main>
-
     <footer>
       <div class="container">
         <nav class="footer-nav">
